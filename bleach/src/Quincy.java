@@ -11,6 +11,6 @@ public class Quincy extends SerEspiritual{
 
     @Override
     public void mostrarPoder(){
-        System.out.println(getNome() + " libera usa sua Schritt " + schritt + " e ativa sua: " + vollstandig);
+        System.out.println(getNome() + "  " + "que é " + getPosicao() + " " +  "libera usa sua Schritt " + schritt + " e ativa sua: " + vollstandig);
     }
 }

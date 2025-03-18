@@ -1,25 +1,52 @@
+import java.util.Scanner;
+import java.util.ArrayList;
+
 public class Main {
 
     public static void main(String[] args) {
 
-        SerEspiritual humano = new Humano("Marcos", "Engenheiro");
+        Scanner input = new Scanner(System.in);
+        
+        ArrayList<SerEspiritual>serEspiritual = new ArrayList<>();
 
-        humano.mostrarPoder();
+        while (true) {
+            
+            System.out.println("1- Shinigami");
+            System.out.println("2- Hollow");
+            System.out.println("3- Quincy");
+            System.out.println("4- Fullbringer");
+            System.out.printf("Informe a raça que deseja cadastrar: ");
+            int escolha = input.nextInt();
+            input.nextLine();
 
-        Shinigami shinigami = new Shinigami("Zaraki Kempanchi ", "Capitão da 11 divisão", "Beba Nozarachi ", " Sem nome");
+            switch (escolha) {
+                case 1:
+                    
+                    serEspiritual.add(new Shinigami(null, null, null, null));
+                    break;
+                case 2:
 
-        shinigami.mostrarPoder();
+                    serEspiritual.add(new Hollow(null, null, null, null));
 
-        Hollow hollow = new Hollow("Starkk", "1 Espada", "Cero Metralleta", "Los lobos");
+                    break;
+                
+                case 3:
 
-        hollow.mostrarPoder();
+                    serEspiritual.add(new Quincy(null, null, null, null));
+                    break;
 
-        Quincy quincy = new Quincy("Jugram", "Braço direito do rei Quincy", "B - A Balança", "Sem nome");
+                
+                case 4:
 
-        quincy.mostrarPoder();
+                    serEspiritual.add(new FullBringer(null, null, null));
+                    break;
 
-        FullBringer fullbringer = new FullBringer("Tsushikima", "Arrombado", "Book of the end");
+                default:
 
-        fullbringer.mostrarPoder();
+                    System.out.println("Opçao invalida!!");
+                    break;
+            }
+        }
+
     }
 }

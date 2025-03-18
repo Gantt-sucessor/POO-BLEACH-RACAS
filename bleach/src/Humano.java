@@ -7,6 +7,6 @@ public class Humano extends SerEspiritual{
 
     @Override
     public void mostrarPoder(){
-        System.out.println(getNome() + " não tem habilidade especial");
+        System.out.println(getNome() + " " + "que ocupa a posição de " + getClass()+ " não tem habilidade especial");
     }
 }

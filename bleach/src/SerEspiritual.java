@@ -1,4 +1,4 @@
-public abstract class SerEspiritual {
+public class SerEspiritual {
 
     private final String nome;
     private final String posicao;
@@ -8,12 +8,8 @@ public abstract class SerEspiritual {
         this.posicao = posicao;
     }
 
-    public String getNome(){
-        return nome;
-    }
-    public String getPosicao(){
-        return posicao;
-    }
+    public void mostrarInformações(){
 
-    public abstract void mostrarPoder();
+        System.out.println("Nome: "+nome + "com posição" + posicao);
+    }
 }
