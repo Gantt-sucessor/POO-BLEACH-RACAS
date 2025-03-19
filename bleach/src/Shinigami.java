@@ -9,10 +9,7 @@ public class Shinigami extends SerEspiritual{
     }
 
     @Override
-    public void mostrarInformacoes(){
-        System.out.println("Nome: " + getNome());
-        System.out.println("Posição: " + getPosicao());
-        System.out.println("Shikai: " + shikai);
-        System.out.println("Bankai: " + bankai);
+    public void mostrarPoder(){
+        System.out.println(getNome() + "libera sua Shikai: " + shikai + "e sua bankai: " + bankai);
     }
 }

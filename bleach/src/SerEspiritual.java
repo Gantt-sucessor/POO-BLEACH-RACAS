@@ -12,9 +12,8 @@ public abstract class SerEspiritual {
         return nome;
     }
     public String getPosicao(){
-
         return posicao;
     }
 
-    public abstract void mostrarInformacoes();
+    public abstract void mostrarPoder();
 }

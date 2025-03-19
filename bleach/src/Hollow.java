@@ -10,11 +10,8 @@ public class Hollow extends SerEspiritual{
         }
 
         @Override
-        public void mostrarInformacoes(){
-            System.out.println("Nome: " + getNome());
-            System.out.println("Posição: " + getPosicao());
-            System.out.println("Cero: " + cero);
-            System.out.println("Resurrection: " + resurrection);
+        public void mostrarPoder(){
+            System.out.println(getNome() + "Usa seu: " + cero + " e ativa sua ressurrection: " + resurrection);
         }
 
 }
