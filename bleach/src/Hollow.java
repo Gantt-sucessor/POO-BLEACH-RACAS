@@ -9,6 +9,13 @@ public class Hollow extends SerEspiritual{
             this.resurrection = resurrection;
         }
 
+        public String getCero() {
+            return cero;
+    }
+
+        public String getResurrection() {
+            return resurrection;
+    }
         @Override
         public void mostrarInformacoes(){
             System.out.println("Nome: " + getNome());
