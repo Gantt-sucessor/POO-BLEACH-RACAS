@@ -8,6 +8,14 @@ public class Shinigami extends SerEspiritual{
         this.bankai = bankai;
     }
 
+    public String getShikai() {
+        return shikai;
+    }
+
+    public String getBankai() {
+        return bankai;
+    }
+
     @Override
     public void mostrarInformacoes(){
         System.out.println("Nome: " + getNome());
